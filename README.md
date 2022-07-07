@@ -6,7 +6,7 @@ This example demonstrates a use of several thirdweb tools to create an NFT Staki
 
 1. [thirdweb's NFT Drop Contract](https://portal.thirdweb.com/pre-built-contracts/nft-drop)
 2. [thirdweb's Token Contract](https://portal.thirdweb.com/pre-built-contracts/token)
-3. A modified version of this [NFT Staking Smart Contract](https://github.com/andreitoma8/ERC721-Staking) by [andreitoma8](https://github.com/andreitoma8/ERC721-Staking)
+3. A modified version of this [NFT Staking Smart Contract](https://github.com/andreitoma8/ERC721-Staking)
 
 We deploy the NFT Staking Smart contract using [thirdweb deploy](https://portal.thirdweb.com/thirdweb-deploy) and interact with all three of the contracts using the thirdweb [TypeScript](https://portal.thirdweb.com/typescript) and [React](https://portal.thirdweb.com/react) SDKs.
 
@@ -22,7 +22,7 @@ We deploy the NFT Staking Smart contract using [thirdweb deploy](https://portal.
 - Create a copy of this repo by running the below command:
 
 ```bash
-npx thirdweb create --example nft-staking-app
+npx thirdweb create --template nft-staking-app
 ```
 
 - Deploy the `StakingContract.sol` smart contract by running the below command from the root of the project directory:
@@ -343,7 +343,3 @@ async function claimRewards() {
   const claim = await contract?.call("claimRewards");
 }
 ```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
